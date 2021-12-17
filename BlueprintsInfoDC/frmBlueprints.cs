@@ -25,9 +25,9 @@ namespace BlueprintsInfoDC
 
         }
 
-      
+        private void lblZoomInfo_Click(object sender, EventArgs e)
+        {
 
-       
-
+        }
     }
 }

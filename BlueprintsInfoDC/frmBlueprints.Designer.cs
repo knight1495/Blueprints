@@ -50,8 +50,9 @@
             this.pnlGeneralinfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlGeneralinfo.ForeColor = System.Drawing.Color.Yellow;
             this.pnlGeneralinfo.Location = new System.Drawing.Point(0, 0);
+            this.pnlGeneralinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlGeneralinfo.Name = "pnlGeneralinfo";
-            this.pnlGeneralinfo.Size = new System.Drawing.Size(1110, 724);
+            this.pnlGeneralinfo.Size = new System.Drawing.Size(1480, 891);
             this.pnlGeneralinfo.TabIndex = 12;
             // 
             // label1
@@ -59,9 +60,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(50, 22);
+            this.label1.Location = new System.Drawing.Point(67, 27);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(274, 25);
+            this.label1.Size = new System.Drawing.Size(338, 31);
             this.label1.TabIndex = 24;
             this.label1.Text = "StarKiller Technical Data";
             // 
@@ -69,9 +71,10 @@
             // 
             this.lblTitol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitol.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitol.Location = new System.Drawing.Point(519, 484);
+            this.lblTitol.Location = new System.Drawing.Point(692, 596);
+            this.lblTitol.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitol.Name = "lblTitol";
-            this.lblTitol.Size = new System.Drawing.Size(557, 39);
+            this.lblTitol.Size = new System.Drawing.Size(743, 48);
             this.lblTitol.TabIndex = 23;
             this.lblTitol.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -81,9 +84,10 @@
             this.picGeneral.Controls.Add(this.labelTransparent2);
             this.picGeneral.Controls.Add(this.labelTransparent1);
             this.picGeneral.Controls.Add(this.labelTransparent3);
-            this.picGeneral.Location = new System.Drawing.Point(23, 72);
+            this.picGeneral.Location = new System.Drawing.Point(31, 89);
+            this.picGeneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picGeneral.Name = "picGeneral";
-            this.picGeneral.Size = new System.Drawing.Size(350, 300);
+            this.picGeneral.Size = new System.Drawing.Size(467, 369);
             this.picGeneral.TabIndex = 22;
             // 
             // labelTransparent2
@@ -94,13 +98,13 @@
             this.labelTransparent2.DimmedColor = System.Drawing.Color.Yellow;
             this.labelTransparent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransparent2.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTransparent2.Location = new System.Drawing.Point(242, 58);
-            this.labelTransparent2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labelTransparent2.Location = new System.Drawing.Point(323, 71);
+            this.labelTransparent2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelTransparent2.Name = "labelTransparent2";
             this.labelTransparent2.Opacity = 1;
             this.labelTransparent2.Radius = 0;
             this.labelTransparent2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTransparent2.Size = new System.Drawing.Size(96, 81);
+            this.labelTransparent2.Size = new System.Drawing.Size(128, 100);
             this.labelTransparent2.TabIndex = 25;
             this.labelTransparent2.Tag = "1";
             // 
@@ -113,12 +117,12 @@
             this.labelTransparent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransparent1.ForeColor = System.Drawing.Color.Transparent;
             this.labelTransparent1.Location = new System.Drawing.Point(1, 1);
-            this.labelTransparent1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labelTransparent1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelTransparent1.Name = "labelTransparent1";
             this.labelTransparent1.Opacity = 1;
             this.labelTransparent1.Radius = 0;
             this.labelTransparent1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTransparent1.Size = new System.Drawing.Size(52, 48);
+            this.labelTransparent1.Size = new System.Drawing.Size(69, 59);
             this.labelTransparent1.TabIndex = 24;
             this.labelTransparent1.Tag = "3";
             // 
@@ -130,13 +134,13 @@
             this.labelTransparent3.DimmedColor = System.Drawing.Color.Yellow;
             this.labelTransparent3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTransparent3.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTransparent3.Location = new System.Drawing.Point(119, 94);
-            this.labelTransparent3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.labelTransparent3.Location = new System.Drawing.Point(159, 116);
+            this.labelTransparent3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.labelTransparent3.Name = "labelTransparent3";
             this.labelTransparent3.Opacity = 1;
             this.labelTransparent3.Radius = 0;
             this.labelTransparent3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTransparent3.Size = new System.Drawing.Size(115, 107);
+            this.labelTransparent3.Size = new System.Drawing.Size(153, 132);
             this.labelTransparent3.TabIndex = 23;
             this.labelTransparent3.Tag = "2";
             // 
@@ -144,20 +148,23 @@
             // 
             this.lblZoomInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblZoomInfo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblZoomInfo.Location = new System.Drawing.Point(27, 385);
+            this.lblZoomInfo.Location = new System.Drawing.Point(36, 474);
+            this.lblZoomInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblZoomInfo.Name = "lblZoomInfo";
-            this.lblZoomInfo.Size = new System.Drawing.Size(334, 80);
+            this.lblZoomInfo.Size = new System.Drawing.Size(445, 98);
             this.lblZoomInfo.TabIndex = 17;
             this.lblZoomInfo.Text = "Check in the image for detailed area  and click for enlarge it";
             this.lblZoomInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblZoomInfo.Click += new System.EventHandler(this.lblZoomInfo_Click);
             // 
             // frmBlueprints
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1110, 724);
+            this.ClientSize = new System.Drawing.Size(1480, 891);
             this.Controls.Add(this.pnlGeneralinfo);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmBlueprints";
             this.Text = "frmBlueprints";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
