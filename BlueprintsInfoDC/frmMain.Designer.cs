@@ -28,25 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStarkiller = new System.Windows.Forms.Button();
+            this.btnSpaceships = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnStarkiller
             // 
-            this.button1.Location = new System.Drawing.Point(67, 47);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 51);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Starkiller";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStarkiller.Location = new System.Drawing.Point(89, 58);
+            this.btnStarkiller.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStarkiller.Name = "btnStarkiller";
+            this.btnStarkiller.Size = new System.Drawing.Size(128, 63);
+            this.btnStarkiller.TabIndex = 1;
+            this.btnStarkiller.Text = "Starkiller";
+            this.btnStarkiller.UseVisualStyleBackColor = true;
+            this.btnStarkiller.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnSpaceships
+            // 
+            this.btnSpaceships.Location = new System.Drawing.Point(768, 58);
+            this.btnSpaceships.Name = "btnSpaceships";
+            this.btnSpaceships.Size = new System.Drawing.Size(128, 63);
+            this.btnSpaceships.TabIndex = 2;
+            this.btnSpaceships.Text = "Spaceships";
+            this.btnSpaceships.UseVisualStyleBackColor = true;
+            this.btnSpaceships.Click += new System.EventHandler(this.btnSpaceships_Click);
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.btnSpaceships);
+            this.Controls.Add(this.btnStarkiller);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";
             this.Text = "frmMain";
             this.ResumeLayout(false);
@@ -54,6 +68,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStarkiller;
+        private System.Windows.Forms.Button btnSpaceships;
     }
 }

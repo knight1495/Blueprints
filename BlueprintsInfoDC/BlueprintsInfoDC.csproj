@@ -51,6 +51,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="starships.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="starships.Designer.cs">
+      <DependentUpon>starships.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBlueprints.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="starships.resx">
+      <DependentUpon>starships.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

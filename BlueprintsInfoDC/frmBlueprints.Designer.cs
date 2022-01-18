@@ -30,19 +30,26 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBlueprints));
             this.pnlGeneralinfo = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.pbxZoom = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.lblTitol = new System.Windows.Forms.Label();
             this.picGeneral = new System.Windows.Forms.Panel();
-            this.labelTransparent2 = new ControlsDC.LabelTransparent();
-            this.labelTransparent1 = new ControlsDC.LabelTransparent();
-            this.labelTransparent3 = new ControlsDC.LabelTransparent();
+            this.lblLaser = new ControlsDC.LabelTransparent();
+            this.lblBase = new ControlsDC.LabelTransparent();
+            this.lblSupply = new ControlsDC.LabelTransparent();
             this.lblZoomInfo = new System.Windows.Forms.Label();
+            this.lblDetails = new System.Windows.Forms.Label();
             this.pnlGeneralinfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxZoom)).BeginInit();
             this.picGeneral.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlGeneralinfo
             // 
+            this.pnlGeneralinfo.Controls.Add(this.lblDetails);
+            this.pnlGeneralinfo.Controls.Add(this.lblTitulo);
+            this.pnlGeneralinfo.Controls.Add(this.pbxZoom);
             this.pnlGeneralinfo.Controls.Add(this.label1);
             this.pnlGeneralinfo.Controls.Add(this.lblTitol);
             this.pnlGeneralinfo.Controls.Add(this.picGeneral);
@@ -50,10 +57,27 @@
             this.pnlGeneralinfo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlGeneralinfo.ForeColor = System.Drawing.Color.Yellow;
             this.pnlGeneralinfo.Location = new System.Drawing.Point(0, 0);
-            this.pnlGeneralinfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlGeneralinfo.Margin = new System.Windows.Forms.Padding(4);
             this.pnlGeneralinfo.Name = "pnlGeneralinfo";
             this.pnlGeneralinfo.Size = new System.Drawing.Size(1480, 891);
             this.pnlGeneralinfo.TabIndex = 12;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lblTitulo.Location = new System.Drawing.Point(1049, 89);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(401, 268);
+            this.lblTitulo.TabIndex = 27;
+            // 
+            // pbxZoom
+            // 
+            this.pbxZoom.Location = new System.Drawing.Point(657, 90);
+            this.pbxZoom.Name = "pbxZoom";
+            this.pbxZoom.Size = new System.Drawing.Size(350, 350);
+            this.pbxZoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxZoom.TabIndex = 25;
+            this.pbxZoom.TabStop = false;
             // 
             // label1
             // 
@@ -81,68 +105,72 @@
             // picGeneral
             // 
             this.picGeneral.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("picGeneral.BackgroundImage")));
-            this.picGeneral.Controls.Add(this.labelTransparent2);
-            this.picGeneral.Controls.Add(this.labelTransparent1);
-            this.picGeneral.Controls.Add(this.labelTransparent3);
+            this.picGeneral.Controls.Add(this.lblLaser);
+            this.picGeneral.Controls.Add(this.lblBase);
+            this.picGeneral.Controls.Add(this.lblSupply);
             this.picGeneral.Location = new System.Drawing.Point(31, 89);
-            this.picGeneral.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picGeneral.Margin = new System.Windows.Forms.Padding(4);
             this.picGeneral.Name = "picGeneral";
             this.picGeneral.Size = new System.Drawing.Size(467, 369);
             this.picGeneral.TabIndex = 22;
             // 
-            // labelTransparent2
+            // lblLaser
             // 
-            this.labelTransparent2.BackColor = System.Drawing.Color.Crimson;
-            this.labelTransparent2.Caption = "click here";
-            this.labelTransparent2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelTransparent2.DimmedColor = System.Drawing.Color.Yellow;
-            this.labelTransparent2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTransparent2.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTransparent2.Location = new System.Drawing.Point(323, 71);
-            this.labelTransparent2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.labelTransparent2.Name = "labelTransparent2";
-            this.labelTransparent2.Opacity = 1;
-            this.labelTransparent2.Radius = 0;
-            this.labelTransparent2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTransparent2.Size = new System.Drawing.Size(128, 100);
-            this.labelTransparent2.TabIndex = 25;
-            this.labelTransparent2.Tag = "1";
+            this.lblLaser.BackColor = System.Drawing.Color.Crimson;
+            this.lblLaser.Caption = "click here";
+            this.lblLaser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblLaser.DimmedColor = System.Drawing.Color.Yellow;
+            this.lblLaser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLaser.ForeColor = System.Drawing.Color.Transparent;
+            this.lblLaser.Location = new System.Drawing.Point(323, 71);
+            this.lblLaser.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lblLaser.Name = "lblLaser";
+            this.lblLaser.Opacity = 1;
+            this.lblLaser.Radius = 0;
+            this.lblLaser.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblLaser.Size = new System.Drawing.Size(128, 100);
+            this.lblLaser.TabIndex = 25;
+            this.lblLaser.Tag = "1";
+            this.lblLaser.Click += new System.EventHandler(this.labelTransparent2_Click);
             // 
-            // labelTransparent1
+            // lblBase
             // 
-            this.labelTransparent1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.labelTransparent1.Caption = "Click";
-            this.labelTransparent1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelTransparent1.DimmedColor = System.Drawing.Color.Yellow;
-            this.labelTransparent1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTransparent1.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTransparent1.Location = new System.Drawing.Point(1, 1);
-            this.labelTransparent1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.labelTransparent1.Name = "labelTransparent1";
-            this.labelTransparent1.Opacity = 1;
-            this.labelTransparent1.Radius = 0;
-            this.labelTransparent1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTransparent1.Size = new System.Drawing.Size(69, 59);
-            this.labelTransparent1.TabIndex = 24;
-            this.labelTransparent1.Tag = "3";
+            this.lblBase.BackColor = System.Drawing.Color.MidnightBlue;
+            this.lblBase.Caption = "Click";
+            this.lblBase.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblBase.DimmedColor = System.Drawing.Color.Yellow;
+            this.lblBase.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBase.ForeColor = System.Drawing.Color.Transparent;
+            this.lblBase.Location = new System.Drawing.Point(1, 1);
+            this.lblBase.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lblBase.Name = "lblBase";
+            this.lblBase.Opacity = 1;
+            this.lblBase.Radius = 0;
+            this.lblBase.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblBase.Size = new System.Drawing.Size(69, 59);
+            this.lblBase.TabIndex = 24;
+            this.lblBase.Tag = "3";
+            this.lblBase.Load += new System.EventHandler(this.lblBase_Load);
+            this.lblBase.Click += new System.EventHandler(this.labelTransparent1_Click);
             // 
-            // labelTransparent3
+            // lblSupply
             // 
-            this.labelTransparent3.BackColor = System.Drawing.Color.OrangeRed;
-            this.labelTransparent3.Caption = "click here";
-            this.labelTransparent3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.labelTransparent3.DimmedColor = System.Drawing.Color.Yellow;
-            this.labelTransparent3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTransparent3.ForeColor = System.Drawing.Color.Transparent;
-            this.labelTransparent3.Location = new System.Drawing.Point(159, 116);
-            this.labelTransparent3.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.labelTransparent3.Name = "labelTransparent3";
-            this.labelTransparent3.Opacity = 1;
-            this.labelTransparent3.Radius = 0;
-            this.labelTransparent3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTransparent3.Size = new System.Drawing.Size(153, 132);
-            this.labelTransparent3.TabIndex = 23;
-            this.labelTransparent3.Tag = "2";
+            this.lblSupply.BackColor = System.Drawing.Color.OrangeRed;
+            this.lblSupply.Caption = "click here";
+            this.lblSupply.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblSupply.DimmedColor = System.Drawing.Color.Yellow;
+            this.lblSupply.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSupply.ForeColor = System.Drawing.Color.Transparent;
+            this.lblSupply.Location = new System.Drawing.Point(159, 116);
+            this.lblSupply.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.lblSupply.Name = "lblSupply";
+            this.lblSupply.Opacity = 1;
+            this.lblSupply.Radius = 0;
+            this.lblSupply.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblSupply.Size = new System.Drawing.Size(153, 132);
+            this.lblSupply.TabIndex = 23;
+            this.lblSupply.Tag = "2";
+            this.lblSupply.Click += new System.EventHandler(this.lblSupply_Click);
             // 
             // lblZoomInfo
             // 
@@ -153,9 +181,16 @@
             this.lblZoomInfo.Name = "lblZoomInfo";
             this.lblZoomInfo.Size = new System.Drawing.Size(445, 98);
             this.lblZoomInfo.TabIndex = 17;
-            this.lblZoomInfo.Text = "Check in the image for detailed area  and click for enlarge it";
+            this.lblZoomInfo.Text = "Check in the image for detailed area  and click to enlarge it";
             this.lblZoomInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblZoomInfo.Click += new System.EventHandler(this.lblZoomInfo_Click);
+            // 
+            // lblDetails
+            // 
+            this.lblDetails.Location = new System.Drawing.Point(654, 474);
+            this.lblDetails.Name = "lblDetails";
+            this.lblDetails.Size = new System.Drawing.Size(759, 368);
+            this.lblDetails.TabIndex = 28;
+            this.lblDetails.Text = "label2";
             // 
             // frmBlueprints
             // 
@@ -164,12 +199,13 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1480, 891);
             this.Controls.Add(this.pnlGeneralinfo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBlueprints";
             this.Text = "frmBlueprints";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.pnlGeneralinfo.ResumeLayout(false);
             this.pnlGeneralinfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxZoom)).EndInit();
             this.picGeneral.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -180,10 +216,13 @@
         private System.Windows.Forms.Panel pnlGeneralinfo;
         private System.Windows.Forms.Label lblZoomInfo;
         private System.Windows.Forms.Panel picGeneral;
-        private ControlsDC.LabelTransparent labelTransparent3;
-        private ControlsDC.LabelTransparent labelTransparent2;
-        private ControlsDC.LabelTransparent labelTransparent1;
+        private ControlsDC.LabelTransparent lblSupply;
+        private ControlsDC.LabelTransparent lblLaser;
+        private ControlsDC.LabelTransparent lblBase;
         private System.Windows.Forms.Label lblTitol;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.PictureBox pbxZoom;
+        private System.Windows.Forms.Label lblDetails;
     }
 }
