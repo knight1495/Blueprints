@@ -25,7 +25,7 @@ namespace BlueprintsInfoDC
         private void starships_Load(object sender, EventArgs e)
         {
 
-            
+            wmp360.Hide();
             doc.Load(filePath);
             ListViewGroup naves = new ListViewGroup("Naves");
             XmlNodeList detailsTitle = doc.SelectNodes("//InfoOptions//textOption");
@@ -65,19 +65,27 @@ namespace BlueprintsInfoDC
 
         private void lbNaves_SelectedIndexChanged(object sender, EventArgs e)
         {
+            
             string nave;
             nave = lbNaves.SelectedIndex.ToString();
             dgvDatosnave.Rows.Clear();
             añadirInfoDesdeXML(nave);
             lblNave.Text = lbNaves.SelectedItem.ToString();
 
+            
+            
+            
+            
             pbFront.Image = Image.FromFile(Application.StartupPath+"//images//"+lbNaves.SelectedItem+"//"+fotoFront(nave));
-            pb360.Image = Image.FromFile(Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + foto360(nave));
             pbRear.Image = Image.FromFile(Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + fotoRear(nave));
             pbSide.Image = Image.FromFile(Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + fotoSide(nave));
             pbTop.Image = Image.FromFile(Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + fotoTop(nave));
+            pb360.Image = Image.FromFile(Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + foto360(nave));
 
-            //wbPdf.Url = Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + pillapdf(nave);
+
+            wbPdf.Navigate(Application.StartupPath + @"/images/" + lbNaves.SelectedItem + @"/" + pillapdf(nave));
+
+            
 
 
         }
@@ -112,11 +120,21 @@ namespace BlueprintsInfoDC
 
             return foto;
         }
-
         private string foto360(string nave)
         {
             string foto;
-            XmlNode frontFoto = doc.SelectSingleNode("//TechnicalInfo//InfoDetails//InfoDetail[idInfoDetail ='" + nave + "']//View360");
+            XmlNode Foto360 = doc.SelectSingleNode("//TechnicalInfo//InfoDetails//InfoDetail[idInfoDetail ='" + nave + "']//View360");
+
+            foto = Foto360.InnerText;
+
+
+            return foto;
+        }
+
+        private string video360(string nave)
+        {
+            string foto;
+            XmlNode frontFoto = doc.SelectSingleNode("//TechnicalInfo//InfoDetails//InfoDetail[idInfoDetail ='" + nave + "']//GeneralView");
 
             foto = frontFoto.InnerText;
 
@@ -148,27 +166,37 @@ namespace BlueprintsInfoDC
 
         private void pbFront_Click(object sender, EventArgs e)
         {
+            wmp360.Hide();
+            pbSelected.Show();
             pbSelected.Image = pbFront.Image;
         }
 
         private void pbSide_Click(object sender, EventArgs e)
         {
+            wmp360.Hide();
+            pbSelected.Show();
             pbSelected.Image = pbSide.Image;
         }
 
         private void pbTop_Click(object sender, EventArgs e)
         {
+            wmp360.Hide();
+            pbSelected.Show();
             pbSelected.Image = pbTop.Image;
         }
 
         private void pbRear_Click(object sender, EventArgs e)
         {
+            wmp360.Hide();
+            pbSelected.Show();
             pbSelected.Image = pbRear.Image;
         }
 
         private void pb360_Click(object sender, EventArgs e)
         {
-            pbSelected.Image = pb360.Image;
+            pbSelected.Hide();
+            wmp360.Show();
+            wmp360.URL = Application.StartupPath + "//images//" + lbNaves.SelectedItem + "//" + video360(lbNaves.SelectedIndex.ToString());
         }
     }
 }
